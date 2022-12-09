@@ -1,0 +1,25 @@
+{
+  "cielPath": "C:\\Program Files\\NextUp Software\\NextUp ERP Complet\\Ciel.exe",
+  "userName": "robot",
+  "password": "robot",
+  "dueDate": "2503",
+  "startDate": "01122022",
+  "endDate": "31122022",
+  "folderRoot": "D:\\Rapoarte declaratii fiscale",
+  "firstNameAdmin": "N",
+  "lastNameAdmin": "M",
+  "positionAdmin": "A",
+  "companies": [
+    {
+      "Id": 50,
+      "Code": "Clona5",
+      "Name": "IMPLANT EXPERT PITESTI SRL - CLONA",
+      "Monthly": true,
+      "Declaration100": true,
+      "Declaration101": true,
+      "Declaration300": false,
+      "Declaration390": false,
+      "Declaration3942016": false
+    }
+  ]
+}

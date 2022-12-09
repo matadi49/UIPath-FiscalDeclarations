@@ -1,0 +1,605 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StartupCiel" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="parameters" Type="InArgument(njl:JObject)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1234,5815</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Configuration.Install</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="802,5750" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="740,142" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Ciel" />
+    <Sequence sap:VirtualizedContainerService.HintSize="740,5446" sap2010:WorkflowViewState.IdRef="Sequence_29">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" sap:VirtualizedContainerService.HintSize="678,97" sap2010:WorkflowViewState.IdRef="StartProcess_4">
+        <ui:StartProcess.FileName>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_183">parameters["cielPath"].ToString()</mca:CSharpValue>
+          </InArgument>
+        </ui:StartProcess.FileName>
+      </ui:StartProcess>
+      <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="On Element Appear 'ciel.exe  Autentificare'" sap:VirtualizedContainerService.HintSize="678,5187" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_12" RepeatForever="False">
+        <ui:OnUiElementAppear.Body>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644,5001" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If sap:VirtualizedContainerService.HintSize="582,360" sap2010:WorkflowViewState.IdRef="If_10">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_144">Console.CapsLock</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'push button'" sap:VirtualizedContainerService.HintSize="334,164" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="caps" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2282ca84-7a5e-4e6e-8d52-9b24635c6d05" InformativeScreenshot="5040d0efc797e6ab15addff386fba890" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmLogin' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+              </If.Then>
+            </If>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="582,144" sap2010:WorkflowViewState.IdRef="TypeInto_11">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="29f8cc21-0cbd-4c42-8a91-19a1aacd0783" InformativeScreenshot="1049f2d22ce4c3d4f128454b081a431c" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmLogin' /&gt;&lt;wnd ctrlname='txtUserName' /&gt;&lt;wnd cls='WindowsForms10.EDIT.*' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+              <ui:TypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_184">parameters["userName"].ToString()</mca:CSharpValue>
+                </InArgument>
+              </ui:TypeInto.Text>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="582,144" sap2010:WorkflowViewState.IdRef="TypeInto_12">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="928578d3-9bc1-4ce7-be29-13b655c92a71" InformativeScreenshot="1486b97261b021b0c5e835ae9990f19d" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmLogin' /&gt;&lt;wnd ctrlname='txtPassword' /&gt;&lt;wnd cls='WindowsForms10.EDIT.*' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+              <ui:TypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_185">parameters["password"].ToString()</mca:CSharpValue>
+                </InArgument>
+              </ui:TypeInto.Text>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'WindowsForms10.Window.b...'" sap:VirtualizedContainerService.HintSize="582,116" sap2010:WorkflowViewState.IdRef="Click_35" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="24c31de6-913f-498b-88c1-fe7ac900433c" InformativeScreenshot="1c28d8ab0af124377b8f35a528646bd4" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmLogin' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Validare' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SwitchCompany workflow" sap:VirtualizedContainerService.HintSize="582,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="SwitchCompany.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="582,3481" sap2010:WorkflowViewState.IdRef="ForEach`1_15">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="njl:JToken">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="njl:JToken" Name="company" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,3338" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Double Click" sap:VirtualizedContainerService.HintSize="484,116" sap2010:WorkflowViewState.IdRef="Click_36" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1b4d76c6-e18d-469d-8bd4-8f0223e5eae5" InformativeScreenshot="387d60d0b703082d7f825c51a4abebc0" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmListSociety' /&gt;&lt;wnd ctrlname='gridControl1' /&gt;&lt;ctrl name='Lista societati' role='table' /&gt;&lt;ctrl name='Header Panel' role='row' /&gt;&lt;ctrl idx='1' name='Cod' role='column header' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="484,144" sap2010:WorkflowViewState.IdRef="TypeInto_13">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9f447f00-20c7-4a24-8356-f10c237bfc45" InformativeScreenshot="211991a176d2e274858e00c208a4d463" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmListSociety' /&gt;&lt;wnd ctrlname='gridControl1' /&gt;&lt;wnd aaname='Editing control' cls='WindowsForms10.Window.*' /&gt;&lt;wnd aaname='Editing control' cls='WindowsForms10.EDIT.*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                      <ui:TypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_187">company["Code"].ToString()</mca:CSharpValue>
+                        </InArgument>
+                      </ui:TypeInto.Text>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Double Click" sap:VirtualizedContainerService.HintSize="484,116" sap2010:WorkflowViewState.IdRef="Click_37" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="768b7520-1598-4ae5-ab5d-ec4fb4c0c714" InformativeScreenshot="f08ce9792b82c8ab1d7d11d1929ca658" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmListSociety' /&gt;&lt;wnd ctrlname='gridControl1' /&gt;&lt;ctrl name='Lista societati' role='table' /&gt;&lt;ctrl name='Row 1' role='list item' /&gt;&lt;ctrl name='Nume row 1' role='cell' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <If sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="If_13">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">(bool)company["Declaration100"]</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,244" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="GenerateDeclaration100.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="x:String" x:Key="startDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_198">parameters["startDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="endDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_197">parameters["endDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="folderRoot">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_196">parameters["folderRoot"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_195">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_194">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_193">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyCode">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_199">company["Code"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyName">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_230">company["Name"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="If_14">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_189">(bool)company["Declaration101"]</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,244" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="GenerateDeclaration101.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="x:String" x:Key="startDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_207">parameters["startDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="endDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_206">parameters["endDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="folderRoot">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_205">parameters["folderRoot"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_204">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_203">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_202">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyCode">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_201">company["Code"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="dueDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_229">parameters["dueDate"].ToString() + DateTime.Now.Year</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyName">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_231">company["Name"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_34">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="If_15">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_190">(bool)company["Declaration300"]</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,244" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="GenerateDeclaration300.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="x:String" x:Key="startDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_215">parameters["startDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="endDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_214">parameters["endDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="folderRoot">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_213">parameters["folderRoot"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_212">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_211">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_210">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyCode">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_209">company["Code"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:Boolean" x:Key="monthly">
+                                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_217">(bool)company["Monthly"]</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyName">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_232">company["Name"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="If_16">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_191">(bool)company["Declaration390"]</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,244" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="GenerateDeclaration390.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="x:String" x:Key="startDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_218">parameters["startDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="folderRoot">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_219">parameters["endDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_220">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_221">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_222">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyCode">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_223">company["Code"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyName">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_233">company["Name"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_38">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="If_17">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_192">(bool)company["Declaration3942016"]</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,244" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="GenerateDeclaration3942016.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="x:String" x:Key="startDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_224">parameters["startDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="endDate">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_225">parameters["endDate"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="folderRoot">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_226">parameters["folderRoot"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyCode">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_227">company["Code"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:Boolean" x:Key="monthly">
+                                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_228">(bool)company["Monthly"]</mca:CSharpValue>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="companyName">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_234">company["Name"].ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_40">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'ciel.exe NextUp'" sap:VirtualizedContainerService.HintSize="484,164" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:ClickImage.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:ClickImage.CursorPosition>
+                      <ui:ClickImage.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAQCAYAAACiEqkUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFsSURBVFhH7VbLDcMgDO1erBImSZQ5oihb9FB1ikqVOkQPPWQCFwwImwAl/aQccnhSwObZfhjI4f6YYccMuxAWuxAWGSFuMEgBQljICS5RvxU49Z7rOkEjJAzXiN+vEYkdFwIdBbQnPjfQ8WqcoQ05K0JECNMJ309YC/GnDijAUgjshh6O4TyF7Rh3bLxottjRHgGFZrzZee/v54gwhLMZJ2ILBaRj8912Uq0zOR87H0d0Z7bG+4WcKSGy94EmIcVjATQxkgDeCU7UMDgdc87LqBPmxebWGWGdvcQv5HynIyJ2vQumiDBAmEzCthC/cN3CpuAuZEQJh8H6O6JmIVhuuo4SDoOIEApWVSaGCmJeDU1CbCx4LuArm+fkRyPYGMwtwaltTlDMK+G3GKeE0EAi12IKdMeYLReAjl8kQ1qaX5bcJro+w0n+faTy+7gj/g3WZdugSiHwCcy+XN9HJUKQlkZs2w0adR6NzTHDEwqlVmjTb/qHAAAAAElFTkSuQmCC" />
+                      </ui:ClickImage.Image>
+                      <ui:ClickImage.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc14b462-ffc9-4c36-80c8-5f001910e363" Selector="&lt;wnd app='ciel.exe' ctrlname='MDIContainerForm' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ClickImage.Target>
+                    </ui:ClickImage>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="484,116" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ba19b7f-8070-4050-bd58-c0973739ce9e" InformativeScreenshot="98eacaeb80faca8f276ca6b249708cfe" Selector="&lt;wnd app='ciel.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;&lt;ctrl name='Schimbare societate' role='push button' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <ui:ForEach.Values>
+                <InArgument x:TypeArguments="sc:IEnumerable">
+                  <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_186">parameters["companies"].ToList()</mca:CSharpValue>
+                </InArgument>
+              </ui:ForEach.Values>
+            </ui:ForEach>
+            <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'ciel.exe CIEL'" sap:VirtualizedContainerService.HintSize="582,116" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="46f23736ed61ac1f3c0b58d4939a8cb7" Selector="&lt;wnd app='ciel.exe' ctrlname='MDIContainerForm' /&gt;" WaitForReady="INTERACTIVE" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'WindowsForms10.Window.b...'" sap:VirtualizedContainerService.HintSize="582,116" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8979f642-a5a2-4c83-ba26-0c30f90b8df1" InformativeScreenshot="fd131c1af9a594fbffac74be35ad601b" Selector="&lt;wnd app='ciel.exe' cls='WindowsForms10.Window.*' title='Confirmare' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='&amp;amp;Da' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ui:OnUiElementAppear.Body>
+        <ui:OnUiElementAppear.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3f26de65-6549-40ab-93dc-2683bccf7061" InformativeScreenshot="c6e298f6cdf56d9ba50c1327091d9ef6" Selector="&lt;wnd app='ciel.exe' ctrlname='FrmLogin' /&gt;" TimeoutMS="30000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:OnUiElementAppear.Target>
+      </ui:OnUiElementAppear>
+    </Sequence>
+  </Sequence>
+</Activity>
