@@ -6,9 +6,6 @@
   "startDate": "01122022",
   "endDate": "31122022",
   "folderRoot": "D:\\Rapoarte declaratii fiscale",
-  "firstNameAdmin": "N",
-  "lastNameAdmin": "M",
-  "positionAdmin": "A",
   "companies": [
     {
       "Id": 50,
@@ -19,7 +16,28 @@
       "Declaration101": true,
       "Declaration300": false,
       "Declaration390": false,
-      "Declaration3942016": false
+      "Declaration394": false,
+      "AdminFirstName": null,
+      "AdminLastName": null,
+      "AdminPosition": null,
+      "CertificateName": "Test Certificate",
+      "Signature": null
+    },
+    {
+      "Id": 51,
+      "Code": "Clona4",
+      "Name": "IMPLANT EXPERT DENTAL LAB SRL - CLONA",
+      "Monthly": true,
+      "Declaration100": false,
+      "Declaration101": true,
+      "Declaration300": false,
+      "Declaration390": false,
+      "Declaration394": false,
+      "AdminFirstName": null,
+      "AdminLastName": null,
+      "AdminPosition": null,
+      "CertificateName": "",
+      "Signature": null
     }
   ]
 }

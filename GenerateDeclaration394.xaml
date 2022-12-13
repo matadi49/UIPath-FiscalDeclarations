@@ -276,7 +276,7 @@
       </ui:TypeInto.Target>
       <ui:TypeInto.Text>
         <InArgument x:TypeArguments="x:String">
-          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Path.Combine(folderRoot, companyName + " - " + companyCode, startDate.Substring(4, 4) + "-" + startDate.Substring(2, 2), "declaratia 3942016")</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Path.Combine(folderRoot, companyName + " - " + companyCode, startDate.Substring(4, 4) + "-" + startDate.Substring(2, 2), "declaratia 394")</mca:CSharpValue>
         </InArgument>
       </ui:TypeInto.Text>
     </ui:TypeInto>

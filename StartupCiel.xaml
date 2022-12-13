@@ -274,13 +274,13 @@
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_196">parameters["folderRoot"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_195">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_238">company["AdminFirstName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_194">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_237">company["AdminLastName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_193">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_236">company["AdminPosition"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="companyCode">
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_199">company["Code"].ToString()</mca:CSharpValue>
@@ -327,13 +327,13 @@
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_205">parameters["folderRoot"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_204">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_241">company["AdminFirstName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_203">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_240">company["AdminLastName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_202">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_239">company["AdminPosition"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="companyCode">
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_201">company["Code"].ToString()</mca:CSharpValue>
@@ -383,13 +383,13 @@
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_213">parameters["folderRoot"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_212">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_244">company["AdminFirstName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_211">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_243">company["AdminLastName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_210">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_242">company["AdminPosition"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="companyCode">
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_209">company["Code"].ToString()</mca:CSharpValue>
@@ -436,13 +436,13 @@
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_219">parameters["endDate"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="firstNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_220">parameters["firstNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_245">company["AdminFirstName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="lastNameAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_221">parameters["lastNameAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_246">company["AdminLastName"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="positionAdmin">
-                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_222">parameters["positionAdmin"].ToString()</mca:CSharpValue>
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_247">company["AdminPosition"].ToString()</mca:CSharpValue>
                               </InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="companyCode">
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_223">company["Code"].ToString()</mca:CSharpValue>
@@ -467,7 +467,7 @@
                     <If sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="If_17">
                       <If.Condition>
                         <InArgument x:TypeArguments="x:Boolean">
-                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_192">(bool)company["Declaration3942016"]</mca:CSharpValue>
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_235">(bool)company["Declaration394"]</mca:CSharpValue>
                         </InArgument>
                       </If.Condition>
                       <If.Then>
@@ -477,7 +477,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="GenerateDeclaration3942016.xaml">
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GenerateDeclaration100 workflow" sap:VirtualizedContainerService.HintSize="338,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="GenerateDeclaration394.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
                               <InArgument x:TypeArguments="x:String" x:Key="startDate">
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_224">parameters["startDate"].ToString()</mca:CSharpValue>
